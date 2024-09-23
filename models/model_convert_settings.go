@@ -18,9 +18,9 @@ type ConvertSettings struct {
 	// Gets or sets requested conversion format
 	Format string `json:"Format"`
 	// Gets or sets format specific load options for source file
-	LoadOptions *LoadOptions `json:"LoadOptions,omitempty"`
+	LoadOptions interface{} `json:"LoadOptions,omitempty"`
 	// Gets or sets format specific convert options for output file
-	ConvertOptions *ConvertOptions `json:"ConvertOptions,omitempty"`
+	ConvertOptions interface{} `json:"ConvertOptions,omitempty"`
 	// Gets or sets converted file save path
 	OutputPath string `json:"OutputPath,omitempty"`
 	// The path to directory containing custom fonts in storage
