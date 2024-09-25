@@ -8,8 +8,9 @@
 
 package models
 
-// Files list
-type FilesList struct {
-	// Files and folders contained by folder StorageFile.
-	Value []StorageFile `json:"Value,omitempty"`
-}
+type DirectionEnum string
+
+const (
+	DirectionEnumL2R DirectionEnum = "L2R"
+	DirectionEnumR2L DirectionEnum = "R2L"
+)

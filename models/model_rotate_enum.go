@@ -8,8 +8,11 @@
 
 package models
 
-// Files list
-type FilesList struct {
-	// Files and folders contained by folder StorageFile.
-	Value []StorageFile `json:"Value,omitempty"`
-}
+type RotateEnum string
+
+const (
+	RotateEnumNone  RotateEnum = "None"
+	RotateEnumOn90  RotateEnum = "On90"
+	RotateEnumOn180 RotateEnum = "On180"
+	RotateEnumOn270 RotateEnum = "On270"
+)

@@ -8,8 +8,11 @@
 
 package models
 
-// Files list
-type FilesList struct {
-	// Files and folders contained by folder StorageFile.
-	Value []StorageFile `json:"Value,omitempty"`
-}
+type FlipModeEnum string
+
+const (
+	FlipModeEnumNone   FlipModeEnum = "None"
+	FlipModeEnumFlipX  FlipModeEnum = "FlipX"
+	FlipModeEnumFlipY  FlipModeEnum = "FlipY"
+	FlipModeEnumFlipXY FlipModeEnum = "FlipXY"
+)

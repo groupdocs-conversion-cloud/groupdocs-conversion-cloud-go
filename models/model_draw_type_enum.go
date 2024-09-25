@@ -8,8 +8,9 @@
 
 package models
 
-// Files list
-type FilesList struct {
-	// Files and folders contained by folder StorageFile.
-	Value []StorageFile `json:"Value,omitempty"`
-}
+type DrawTypeEnum string
+
+const (
+	DrawTypeEnumUseDrawColor   DrawTypeEnum = "UseDrawColor"
+	DrawTypeEnumUseObjectColor DrawTypeEnum = "UseObjectColor"
+)
