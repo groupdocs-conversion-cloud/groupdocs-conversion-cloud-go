@@ -11,9 +11,9 @@ package models
 // Options for to presentation conversion
 type PresentationConvertOptions struct {
 	// Start conversion from FromPage page
-	FromPage int32 `json:"FromPage"`
+	FromPage int32 `json:"FromPage,omitempty"`
 	// Number of pages to convert
-	PagesCount int32 `json:"PagesCount"`
+	PagesCount int32 `json:"PagesCount,omitempty"`
 	// Convert specific pages. The list contains the page indexes of the pages to be converted
 	Pages []int32 `json:"Pages,omitempty"`
 	// Watermark specific options
@@ -21,5 +21,5 @@ type PresentationConvertOptions struct {
 	// Set this property if you want to protect the converted document with a password
 	Password string `json:"Password,omitempty"`
 	// Specifies the zoom level in percentage. Default is 100. Default zoom is supported till Microsoft Powerpoint 2010. Starting from Microsoft Powerpoint 2013 default zoom is no longer set to document, instead it appears to use the zoom factor of the last document that was opened.
-	Zoom int32 `json:"Zoom"`
+	Zoom int32 `json:"Zoom,omitempty"`
 }

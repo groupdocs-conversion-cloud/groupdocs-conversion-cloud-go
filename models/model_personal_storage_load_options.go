@@ -15,5 +15,5 @@ type PersonalStorageLoadOptions struct {
 	// Folder which to be processed Default is Inbox
 	Folder string `json:"Folder,omitempty"`
 	// Controls how many levels in depth to perform conversion
-	Depth int32 `json:"Depth"`
+	Depth int32 `json:"Depth,omitempty"`
 }

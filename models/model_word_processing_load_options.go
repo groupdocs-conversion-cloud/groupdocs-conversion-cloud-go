@@ -25,9 +25,9 @@ type WordProcessingLoadOptions struct {
 	// Hide comments
 	HideComments bool `json:"HideComments"`
 	// Specifies the default level in the document outline at which to display Word bookmarks. Default is 0. Valid range is 0 to 9.
-	BookmarksOutlineLevel int32 `json:"BookmarksOutlineLevel"`
+	BookmarksOutlineLevel int32 `json:"BookmarksOutlineLevel,omitempty"`
 	// Specifies how many levels of headings (paragraphs formatted with the Heading styles) to include in the document outline. Default is 0. Valid range is 0 to 9.
-	HeadingsOutlineLevels int32 `json:"HeadingsOutlineLevels"`
+	HeadingsOutlineLevels int32 `json:"HeadingsOutlineLevels,omitempty"`
 	// Specifies how many levels in the document outline to show expanded when the file is viewed. Default is 0. Valid range is 0 to 9. Note that this options will not work when saving to XPS.
-	ExpandedOutlineLevels int32 `json:"ExpandedOutlineLevels"`
+	ExpandedOutlineLevels int32 `json:"ExpandedOutlineLevels,omitempty"`
 }

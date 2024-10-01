@@ -17,29 +17,29 @@ type CsvLoadOptions struct {
 	// Substitute specific fonts when converting Cells document.
 	FontSubstitutes map[string]string `json:"FontSubstitutes,omitempty"`
 	// Show grid lines when converting Excel files
-	ShowGridLines bool `json:"ShowGridLines"`
+	ShowGridLines bool `json:"ShowGridLines,omitempty"`
 	// Show hidden sheets when converting Excel files
-	ShowHiddenSheets bool `json:"ShowHiddenSheets"`
+	ShowHiddenSheets bool `json:"ShowHiddenSheets,omitempty"`
 	// If OnePagePerSheet is true the content of the sheet will be converted to one page in the PDF document. Default value is true.
-	OnePagePerSheet bool `json:"OnePagePerSheet"`
+	OnePagePerSheet bool `json:"OnePagePerSheet,omitempty"`
 	// Convert specific range when converting to other than cells format. Example: \"D1:F8\"
 	ConvertRange string `json:"ConvertRange,omitempty"`
 	// Skips empty rows and columns when converting. Default is True.
-	SkipEmptyRowsAndColumns bool `json:"SkipEmptyRowsAndColumns"`
+	SkipEmptyRowsAndColumns bool `json:"SkipEmptyRowsAndColumns,omitempty"`
 	// Set password to unprotect protected document
 	Password string `json:"Password,omitempty"`
 	// Hide comments
-	HideComments bool `json:"HideComments"`
+	HideComments bool `json:"HideComments,omitempty"`
 	// Delimiter of a Csv file
-	Separator string `json:"Separator"`
+	Separator string `json:"Separator,omitempty"`
 	// True means the file contains several encodings
-	IsMultiEncoded bool `json:"IsMultiEncoded"`
+	IsMultiEncoded bool `json:"IsMultiEncoded,omitempty"`
 	// Indicates whether text is formula if it starts with \"=\"
-	HasFormula bool `json:"HasFormula"`
+	HasFormula bool `json:"HasFormula,omitempty"`
 	// Indicates whether the string in the file is converted to numeric. Default is True
-	ConvertNumericData bool `json:"ConvertNumericData"`
+	ConvertNumericData bool `json:"ConvertNumericData,omitempty"`
 	// Indicates whether the string in the file is converted to date. Default is True
-	ConvertDateTimeData bool `json:"ConvertDateTimeData"`
+	ConvertDateTimeData bool `json:"ConvertDateTimeData,omitempty"`
 	// File encoding
 	Encoding string `json:"Encoding,omitempty"`
 }

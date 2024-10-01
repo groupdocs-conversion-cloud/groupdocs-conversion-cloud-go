@@ -29,5 +29,5 @@ type XpsConvertOptions struct {
 	// Set this property if you want to protect the converted document with a password
 	Password string `json:"Password,omitempty"`
 	// If true, the input firstly is converted to PDF and after that to desired format
-	UsePdf bool `json:"UsePdf"`
+	UsePdf bool `json:"UsePdf,omitempty"`
 }

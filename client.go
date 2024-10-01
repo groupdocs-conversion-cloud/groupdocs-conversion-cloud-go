@@ -422,6 +422,8 @@ func setBody(body interface{}, contentType string) (bodyBuf *bytes.Buffer, err e
 		return nil, err
 	}
 
+	// fmt.Println(bodyBuf.String())
+
 	if bodyBuf.Len() == 0 {
 		err = fmt.Errorf("Invalid body type %s\n", contentType)
 		return nil, err

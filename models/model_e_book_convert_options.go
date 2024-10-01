@@ -11,13 +11,13 @@ package models
 // Ebook convert options
 type EBookConvertOptions struct {
 	// Start conversion from FromPage page
-	FromPage int32 `json:"FromPage"`
+	FromPage int32 `json:"FromPage,omitempty"`
 	// Number of pages to convert
-	PagesCount int32 `json:"PagesCount"`
+	PagesCount int32 `json:"PagesCount,omitempty"`
 	// Convert specific pages. The list contains the page indexes of the pages to be converted
 	Pages []int32 `json:"Pages,omitempty"`
 	// Watermark specific options
 	WatermarkOptions *WatermarkOptions   `json:"WatermarkOptions,omitempty"`
-	PageSize         PageSizeEnum        `json:"PageSize"`
-	PageOrientation  PageOrientationEnum `json:"PageOrientation"`
+	PageSize         PageSizeEnum        `json:"PageSize,omitempty"`
+	PageOrientation  PageOrientationEnum `json:"PageOrientation,omitempty"`
 }

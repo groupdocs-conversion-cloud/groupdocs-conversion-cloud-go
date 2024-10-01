@@ -16,5 +16,5 @@ type CadLoadOptions struct {
 	LayoutNames []string `json:"LayoutNames,omitempty"`
 	// Gets or sets a background color.
 	BackgroundColor string       `json:"BackgroundColor,omitempty"`
-	DrawType        DrawTypeEnum `json:"DrawType"`
+	DrawType        DrawTypeEnum `json:"DrawType,omitempty"`
 }
