@@ -38,8 +38,8 @@ func main() {
 
  // Create an OAuth2 config using client_credentials grant type
  conf := &clientcredentials.Config{
-  ClientID:     "961234b6-aa74-40c2-a0c0-9d6e2ff92eab",      // Your client_id
-  ClientSecret: "a1b6c8aa82e0cc3fc642b4bc0e1d38b2",          // Your client_secret
+  ClientID:     "XXXX-XXXX-XXXX-XXXX",      // Your client_id
+  ClientSecret: "XXXXXXXXXXXXXXXX",         // Your client_secret
   TokenURL:     "https://api.groupdocs.cloud/connect/token", // The token URL
   Scopes:       []string{},                                  // Optional: specify any required scopes
  }
