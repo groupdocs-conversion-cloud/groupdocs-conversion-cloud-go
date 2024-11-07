@@ -7,9 +7,9 @@
 
 package models
 
-// Represents field label
-type FieldLabel struct {
-	Field FieldEnum `json:"Field"`
-	// The label e.g. \"Sender\"
-	Label string `json:"Label,omitempty"`
-}
+type HtmlRenderingModeEnum string
+
+const (
+	HtmlRenderingModeEnumFlow     HtmlRenderingModeEnum = "Flow"
+	HtmlRenderingModeEnumAbsolute HtmlRenderingModeEnum = "AbsolutePositioning"
+)
