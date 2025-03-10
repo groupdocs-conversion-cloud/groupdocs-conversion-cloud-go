@@ -36,6 +36,9 @@ type ImageConvertOptions struct {
 	// Adjust image contrast
 	Contrast int32 `json:"Contrast,omitempty"`
 	// Adjust image gamma
-	Gamma    float64      `json:"Gamma,omitempty"`
+	Gamma float64 `json:"Gamma,omitempty"`
+	// Image flip mode
 	FlipMode FlipModeEnum `json:"FlipMode,omitempty"`
+	// Image background color
+	BackgroundColor string `json:"BackgroundColor,omitempty"`
 }

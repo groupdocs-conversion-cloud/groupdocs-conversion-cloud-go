@@ -36,8 +36,11 @@ type JpgConvertOptions struct {
 	// Adjust image contrast
 	Contrast int32 `json:"Contrast,omitempty"`
 	// Adjust image gamma
-	Gamma    float64      `json:"Gamma,omitempty"`
+	Gamma float64 `json:"Gamma,omitempty"`
+	// Image flip mode
 	FlipMode FlipModeEnum `json:"FlipMode,omitempty"`
+	// Image background color
+	BackgroundColor string `json:"BackgroundColor,omitempty"`
 	// Desired image quality when converting to Jpeg. The value must be between 0 and 100. The default value is 100.
 	Quality int32 `json:"Quality,omitempty"`
 }

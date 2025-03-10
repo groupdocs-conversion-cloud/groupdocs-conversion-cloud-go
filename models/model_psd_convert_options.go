@@ -36,8 +36,11 @@ type PsdConvertOptions struct {
 	// Adjust image contrast
 	Contrast int32 `json:"Contrast,omitempty"`
 	// Adjust image gamma
-	Gamma    float64      `json:"Gamma,omitempty"`
+	Gamma float64 `json:"Gamma,omitempty"`
+	// Image flip mode
 	FlipMode FlipModeEnum `json:"FlipMode,omitempty"`
+	// Image background color
+	BackgroundColor string `json:"BackgroundColor,omitempty"`
 	// Bits count per color channel
 	ChannelBitsCount int32 `json:"ChannelBitsCount,omitempty"`
 	// Color channels count

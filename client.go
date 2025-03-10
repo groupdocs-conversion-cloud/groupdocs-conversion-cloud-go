@@ -36,7 +36,7 @@ var (
 	xmlCheck  = regexp.MustCompile("(?i:(?:application|text)/xml)")
 )
 
-// APIClient manages communication with the GroupDocs.Conversion Cloud API Reference API v24.11
+// APIClient manages communication with the GroupDocs.Conversion Cloud API Reference API v25.3
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration
