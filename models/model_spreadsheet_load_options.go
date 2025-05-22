@@ -27,6 +27,6 @@ type SpreadsheetLoadOptions struct {
 	SkipEmptyRowsAndColumns bool `json:"SkipEmptyRowsAndColumns"`
 	// Set password to unprotect protected document
 	Password string `json:"Password,omitempty"`
-	// Hide comments
-	HideComments bool `json:"HideComments"`
+	// Represents the way comments are printed with the sheet. Default is PrintNoComments.
+	PrintComments PrintCommentsEnum `json:"PrintComments,omitempty"`
 }
