@@ -10,7 +10,7 @@ package models
 type CommentDisplayModeEnum string
 
 const (
-	CommentDisplayModeEnumPrintInPlace    CommentDisplayModeEnum = "Hidden"
-	CommentDisplayModeEnumPrintNoComments CommentDisplayModeEnum = "Balloon"
-	CommentDisplayModeEnumPrintSheetEnd   CommentDisplayModeEnum = "Annotation"
+	CommentDisplayModeEnumHidden     CommentDisplayModeEnum = "Hidden"
+	CommentDisplayModeEnumBalloon    CommentDisplayModeEnum = "Balloon"
+	CommentDisplayModeEnumAnnotation CommentDisplayModeEnum = "Annotation"
 )
