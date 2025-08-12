@@ -19,4 +19,16 @@ type PdfLoadOptions struct {
 	HidePdfAnnotations bool `json:"HidePdfAnnotations,omitempty"`
 	// Flatten all the fields of the PDF form
 	FlattenAllFields bool `json:"FlattenAllFields,omitempty"`
+	// Clear built-in document properties
+	ClearBuiltInDocumentProperties bool `json:"ClearBuiltInDocumentProperties"`
+	// Clear custom document properties
+	ClearCustomDocumentProperties bool `json:"ClearCustomDocumentProperties"`
+	// Enable or disable generation of page numbering in converted document. Default:     false
+	PageNumbering bool `json:"PageNumbering"`
+	// Default font for Pdf document. The following font will be used if a font is missing.
+	DefaultFont string `json:"DefaultFont,omitempty"`
+	// Remove javascript
+	RemoveJavascript bool `json:"RemoveJavascript"`
+	// Substitute specific fonts when converting Words document.
+	FontSubstitutes map[string]string `json:"FontSubstitutes,omitempty"`
 }

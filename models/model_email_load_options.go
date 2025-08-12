@@ -13,6 +13,8 @@ type EmailLoadOptions struct {
 	Format string `json:"Format,omitempty"`
 	// Option to display or hide the email header. Default: true
 	DisplayHeader bool `json:"DisplayHeader,omitempty"`
+	// Option to display or hide email addresses. Default: true
+	DisplayEmailAddresses bool `json:"DisplayEmailAddresses"`
 	// Option to display or hide \"from\" email address. Default: true
 	DisplayFromEmailAddress bool `json:"DisplayFromEmailAddress"`
 	// Option to display or hide \"to\" email address. Default: true
@@ -23,10 +25,18 @@ type EmailLoadOptions struct {
 	DisplayBccEmailAddress bool `json:"DisplayBccEmailAddress"`
 	// Gets or sets the Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the localtime and UTC.
 	TimeZoneOffset string `json:"TimeZoneOffset,omitempty"`
-	// Option to convert attachments in source email or not. Default: false.
-	ConvertAttachments bool `json:"ConvertAttachments"`
+	// Option to display or hide sent date/time in the header. Default: true.
+	DisplaySent bool `json:"DisplaySent"`
+	// Option to display or hide subject in the header. Default: true.
+	DisplaySubject bool `json:"DisplaySubject"`
+	// Option to display or hide attachments in the header. Default: true.
+	DisplayAttachments bool `json:"DisplayAttachments"`
 	// The mapping between email message field and field text representation
 	FieldLabels []FieldLabel `json:"FieldLabels,omitempty"`
 	// Defines whether need to keep original date header string in mail message when saving or not (Default value is true)
 	PreserveOriginalDate bool `json:"PreserveOriginalDate,omitempty"`
+	// Default font for Email document. The following font will be used if a font is missing.
+	DefaultFont string `json:"DefaultFont,omitempty"`
+	// List of font substitutes.
+	FontSubstitutes map[string]string `json:"FontSubstitutes,omitempty"`
 }

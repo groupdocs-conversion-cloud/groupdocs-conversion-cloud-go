@@ -17,4 +17,14 @@ type WebLoadOptions struct {
 	UsePdf bool `json:"UsePdf,omitempty"`
 	// Controls how HTML content is rendered. Default: AbsolutePositioning
 	RenderingMode HtmlRenderingModeEnum `json:"RenderingMode,omitempty"`
+	// The base path/url for the html
+	BasePath string `json:"BasePath,omitempty"`
+	// Get or sets the encoding to be used when loading the web document. If the property is null the encoding will be determined from document character set attribute
+	Encoding string `json:"Encoding,omitempty"`
+	// If true all external resource will not be loading
+	SkipExternalResources bool `json:"SkipExternalResources"`
+	// Zoom in percentage
+	Zoom int32 `json:"Zoom,omitempty"`
+	// Custom Css Style
+	CustomCssStyle string `json:"CustomCssStyle,omitempty"`
 }
